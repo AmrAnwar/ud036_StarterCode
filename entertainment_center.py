@@ -1,6 +1,6 @@
 # import the Movie class and open_movies_page from init.py file
-from ud036_StarterCode import Movie
-from ud036_StarterCode import open_movies_page
+from media import Movie
+from fresh_tomatoes import open_movies_page
 
 
 def create_movies():
@@ -27,11 +27,11 @@ def create_movies():
     Movie(
         title="spirited away",
         image_url="http://www9.0zz0.com/2017/09/21/19/974860969.jpg",
-        youtube_url="https://www.youtube.com/watch?v=ByXuk9QqQkk",)
+        youtube_url="https://www.youtube.com/watch?v=ByXuk9QqQkk", )
     Movie(
         title="the wind Rises",
         image_url="http://www9.0zz0.com/2017/09/21/19/474969239.jpg",
-        youtube_url="https://www.youtube.com/watch?v=2QFBZgAZx7g",)
+        youtube_url="https://www.youtube.com/watch?v=2QFBZgAZx7g", )
 
     open_movies_page(Movie.movies)
 
