@@ -8,7 +8,7 @@ class Movie(object):
         """
         Author: AmrAnwar
 
-        create a movie object by sending 3 parameters (title, image_url , youtube_url
+        create a movie object by sending 3 parameters
         :param title: the movie title
         :param image_url: online url to image
         :param youtube_url: url to the movie trailer on youtube
@@ -24,13 +24,13 @@ def check_is_url(url=None):
     """
      check if url is valid
     :param url: link
-    :return: Errors : MissingSchema if the user didn't send url pattern
-                      ValueError if the pattern is true but the url is not valid
-            if the url is valid return 200
+    :return: Errors :
+        MissingSchema if the user didn't send url pattern
+        ValueError if the pattern is true but the url is not valid
+        if the url is valid return 200
     """
-    if requests.get(url).status_code == 200:  # if the status code is 200 that mean good request
+    # if the status code is 200 that mean good request
+    if requests.get(url).status_code == 200:
         return url
     else:
-        raise ValueError("please inter valid url in poster url field and youtube_url")
-
-
+        raise ValueError("please inter valid url")
